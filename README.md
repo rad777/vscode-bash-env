@@ -155,9 +155,9 @@ Te ustawienia zachowaj dla siebie (otworzysz je przez `Ctrl + Shift + P` -> `Pre
         "jsonc": false
     },
     "github.copilot.nextEditSuggestions.enabled": true,
-    
+
     "shellformat.path": "/usr/bin/shfmt",
-    
+
     "settingsSync.ignoredSettings": [
         "shellcheck.enable"
     ]
@@ -172,14 +172,14 @@ Te ustawienia lądują w pliku **`.vscode/settings.json`** wewnątrz folderu Two
     "[shellscript]": {
         "editor.defaultFormatter": "mkhl.shfmt"
     },
-    
+
     "shellcheck.enable": true,
     "shellcheck.run": "onType",
-    
+
     "bashIDE.backgroundAnalysisMaxFiles": 500,
     "bashIDE.enableSourceErrorDiagnostics": true,
     "bashIDE.explanationSymbolMandatory": false,
-    
+
     "files.eol": "\n"
 }
 ```
@@ -187,7 +187,7 @@ Te ustawienia lądują w pliku **`.vscode/settings.json`** wewnątrz folderu Two
 ## 5. Instalacja i konfiguracja wtyczki SFTP
 
 ### 5.1 Wymagania po stronie serwera
-Raspberry Pi (lub serwer Linux) musi mieć działającą usługę SSH. 
+Raspberry Pi (lub serwer Linux) musi mieć działającą usługę SSH.
 
 ### 5.2 Instalacja wtyczki SFTP
 W panelu rozszerzeń VS Code (`Ctrl + Shift + X`) wyszukaj i zainstaluj:
@@ -206,9 +206,9 @@ Wciśnij **`Ctrl + Shift + P`** -> wpisz `SFTP: Config`. Wygenerowany plik skonf
     "host": "WSTAW_IP_SERWERA",
     "protocol": "sftp",
     "port": 22,
-    "username": "gilgamesz",
-    "password": "WSTAW_HASLO",
-    "remotePath": "/home/gilgamesz/scripts",
+    "username": "USERNAME",
+    "password": "PASSWORD",
+    "remotePath": "/home/USERNAME/scripts",
     "uploadOnSave": false,
     "useTempFile": true,
     "openSsh": false,
