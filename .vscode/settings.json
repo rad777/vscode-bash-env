@@ -1,0 +1,14 @@
+{
+    "shellformat.path": "/usr/bin/shfmt",
+    "[shellscript]": {
+        "editor.defaultFormatter": "mkhl.shfmt"
+    },
+    "shellcheck.enable": true,
+    "shellcheck.run": "onType",
+    "bashIDE.backgroundAnalysisMaxFiles": 500,
+    "bashIDE.enableSourceErrorDiagnostics": true,
+    "bashIDE.explanationSymbolMandatory": false,
+    "settingsSync.ignoredSettings": [
+        "shellcheck.enable"
+    ]
+}
