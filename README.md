@@ -1,4 +1,4 @@
-# Instrukcja Konfiguracji Środowiska Bash w VS Code
+# Konfiguracji VS Code do pisania skryptów w Bash
 
 ## 1. Plan i wymagane elementy
 
