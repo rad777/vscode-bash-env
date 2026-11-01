@@ -139,33 +139,9 @@ Aby zoptymalizować serwer językowy i podpowiedzi (np. limit analizy plików w 
 2. **Wynik:** Wyskoczy menu IntelliSense z podpowiedzią dokończenia nazwy.
 3. **Korzyści:** Szybsze pisanie, błyskawiczna nawigacja po kodzie (Go to Definition pod `Ctrl + Klik`) i dostęp do dokumentacji (Hover).
 
-### 4.5 Podział ustawień: Globalne vs Lokalne (Projektu)
-Aby projekt wyglądał profesjonalnie na GitHubie i działał u każdego programisty, konieczne jest rozdzielenie prywatnych ustawień VS Code od ustawień wymuszanych w danym repozytorium.
+### 4.5 Ustawienia w pliku settings.json
 
-#### A. Ustawienia Globalne (Twoje prywatne środowisko)
-Te ustawienia zachowaj dla siebie (otworzysz je przez `Ctrl + Shift + P` -> `Preferences: Open User Settings (JSON)`). Zapisują się one w Twoim systemie (np. `~/.config/Code/User/settings.json`) i zależą od Twoich subskrypcji oraz specyficznych ścieżek instalacji. **Nie umieszczaj ich w repozytorium projektu.**
-
-```json
-{
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false,
-        "jsonc": false
-    },
-    "github.copilot.nextEditSuggestions.enabled": true,
-
-    "shellformat.path": "/usr/bin/shfmt",
-
-    "settingsSync.ignoredSettings": [
-        "shellcheck.enable"
-    ]
-}
-```
-
-#### B. Ustawienia Projektu (Dołączane do repozytorium GitHub)
-Te ustawienia lądują w pliku **`.vscode/settings.json`** wewnątrz folderu Twojego projektu. Będą współdzielone z każdym, kto pobierze kod. Gwarantują one, że inni członkowie zespołu będą mieli narzucony ten sam formater i znormalizowane końcówki linii.
+Ustawienia Globalne pozostają bez zmian. Zmieniamy ustawienia w pliku settings.json projektu (otworzysz je przez `Ctrl + Shift + P` -> `Preferences: Open Workspace Settings (JSON)`). Te ustawienia lądują w pliku **`.vscode/settings.json`** wewnątrz folderu projektu. Będą współdzielone z każdym, kto pobierze kod. Gwarantują one, że inni członkowie zespołu będą mieli narzucony ten sam formater i znormalizowane końcówki linii.
 
 ```json
 {
